@@ -17,14 +17,12 @@ type
     Button3: TButton;
     Button4: TButton;
     Button5: TButton;
-    Button6: TButton;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
-    procedure Button6Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   end;
 
@@ -66,12 +64,6 @@ procedure TForm1.Button5Click(Sender: TObject);
 begin
   figure.destroy;
   showMessage('Объект типа ' + figure.name + ' уничтожен.');
-end;
-
-procedure TForm1.Button6Click(Sender: TObject);
-begin
-  figure:=tCircle.create(10, 10, 5);
-  showMessage('Объект типа ' + figure.name + ' создался.');
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
