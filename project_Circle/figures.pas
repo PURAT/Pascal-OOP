@@ -11,8 +11,8 @@ type
   tFigure = class
     name: string;
     x, y: integer;
-    procedure show(); virtual;
-    procedure hide(); virtual;
+    procedure show(); virtual; abstract;
+    procedure hide(); virtual; abstract;
     function getInfo(): string; virtual;
     procedure moveTo(x, y: integer);
     constructor Create(x, y: integer);
@@ -20,10 +20,14 @@ type
   end;
 
   tDot = class(tFigure)
+    procedure show(); override;
+    procedure hide(); override;
   end;
 
   tCircle = class(tFigure)
     r: integer;
+    procedure show(); override;
+    procedure hide(); override;
     constructor Create(x, y, r: integer);
     function getInfo(): string; override;
   end;
@@ -40,12 +44,12 @@ implementation
     name:=self.ClassName;
   end;
 
-  procedure tFigure.show();
+  procedure tDot.show();
   begin
     Form1.label1.caption:= self.getInfo();
   end;
 
-  procedure tFigure.hide();
+  procedure tDot.hide();
   begin
     Form1.label1.caption:= '';
   end;
@@ -80,5 +84,14 @@ implementation
     result:='тип: ' + name + #10#13 + 'x= ' + IntToStr(x) + ', y= ' + IntToStr(y) + ', r= ' + IntToStr(r);
   end;
 
+  procedure tCircle.show();
+  begin
+    Form1.label1.caption:= self.getInfo();
+  end;
+
+  procedure tCircle.hide();
+  begin
+    Form1.label1.caption:= '';
+  end;
 end.
 

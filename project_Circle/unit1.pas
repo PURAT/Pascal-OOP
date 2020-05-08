@@ -23,6 +23,7 @@ type
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   end;
 
@@ -64,6 +65,12 @@ procedure TForm1.Button5Click(Sender: TObject);
 begin
   figure.destroy;
   showMessage('Объект типа ' + figure.name + ' уничтожен.');
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+  figure:=tCircle.create(40, 50, 20);
+  showMessage('Объект типа ' + figure.name + ' создался.');
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
