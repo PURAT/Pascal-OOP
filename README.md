@@ -21,5 +21,4 @@
 
 #### Пятое задание (hierarchy_figures)
 
-![task 5-1](screenshots/5_1.png)
-![task 5-2](screenshots/5_2.png)
+![task 5-1](screenshots/5_1.png) ----- ![task 5-2](screenshots/5_2.png)
