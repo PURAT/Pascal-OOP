@@ -33,15 +33,15 @@ type
     constructor Create(x, y, x1, y1: integer; canvas: tCanvas);
   end;
 
-  tCircle = class(tDot)
+  tCircle = class(tFigure)
     r: integer;
     procedure show(); override;
     procedure hide(); override;
     constructor Create(x, y, r: integer; canvas: tCanvas);
   end;
 
-  tEllipse = class(tCircle)
-    r2: integer;
+  tEllipse = class(tFigure)
+    r, r2: integer;
     procedure show(); override;
     procedure hide(); override;
     constructor Create(x, y, r, r2: integer; canvas: tCanvas);
@@ -54,8 +54,8 @@ type
     constructor Create(x, y, a: integer; canvas: tCanvas);
   end;
 
-  tRectangle = class(tSquare)
-    b: integer;
+  tRectangle = class(tFigure)
+    a, b: integer;
     procedure show(); override;
     procedure hide(); override;
     constructor Create(x, y, a, b: integer; canvas: tCanvas);
@@ -121,7 +121,8 @@ implementation
 
   constructor tEllipse.Create(x, y, r, r2: integer; canvas: tCanvas);
   begin
-    inherited Create(x, y, r, canvas);
+    inherited Create(x, y, canvas);
+    self.r:=r;
     self.r2:=r2;
   end;
 
@@ -176,7 +177,8 @@ implementation
 
   constructor tRectangle.Create(x, y, a, b: integer; canvas: tCanvas);
   begin
-    inherited Create(x, y, a, canvas);
+    inherited Create(x, y, canvas);
+    self.a:=a;
     self.b:=b;
   end;
 

@@ -63,8 +63,8 @@ end;
 
 procedure TForm1.Button5Click(Sender: TObject);
 begin
-  figure.destroy;
   showMessage('Объект типа ' + figure.name + ' уничтожен.');
+  figure.destroy;
 end;
 
 procedure TForm1.Button6Click(Sender: TObject);
