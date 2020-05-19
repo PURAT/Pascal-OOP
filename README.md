@@ -17,7 +17,7 @@
 #### Четвёртое задание (project_Circle)
 ![task 4](screenshots/4.png)
 
-#### Пятое задание (hierarchy_figures)
+#### Пятое и шестое задание (hierarchy_figures)
 *Для корректной работы с tImage нужно поместить в его свойство "Picture" белую картинку.*
 
 ![task 5-1](screenshots/5_1.png) ----- ![task 5-2](screenshots/5_2.png)
