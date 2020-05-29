@@ -21,5 +21,5 @@
 
 ![task 5-1](screenshots/5_1.png) ----- ![task 5-2](screenshots/5_2.png)
 
-#### Седьмое задание (hierarchy_figures)
+#### Седьмое задание (List_from_end)
 Скрины скоро будут...
