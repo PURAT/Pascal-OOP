@@ -22,4 +22,5 @@
 ![task 5-1](screenshots/5_1.png) ----- ![task 5-2](screenshots/5_2.png)
 
 #### Седьмое задание (List_from_end)
-Скрины скоро будут...
+
+![task 7](screenshots/7.png)
