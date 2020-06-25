@@ -24,3 +24,18 @@
 #### Седьмое задание (List_from_end)
 
 ![task 7](screenshots/7.png)
+
+#### Восьмое задание (task8)
+
+![task 8](screenshots/8.png)
+
+#### Девятое задание (task9)
+
+![task 9](screenshots/9.png)
+
+#### Десятое задание (task11)
+Просто **удалите из одиннадцатого задания метод redraw()** в файле figures.pas. Там где он используется (например, в методах add, remove и других) замените redraw() на pLastNode^.figure.show().
+
+#### Одиннадцатое задание (task11)
+
+![task 11](screenshots/11.png)
